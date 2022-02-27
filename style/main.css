@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Montserrat:wght@500;600;700&display=swap');
 @import url('sections.css');
+@import url('header.css');
 
 :root {
     --white: #ffffff;
@@ -31,7 +32,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-h2,h3,h4,h5{
+h2, h3, h4, h5{
     font-weight: 700;
 }
 
@@ -53,4 +54,11 @@ h4{
 h5{
     font-size: 20px;
     line-height: 24px;
+}
+
+a,
+a:active,
+a:focus,
+a:visited{
+    text-decoration: none;
 }
