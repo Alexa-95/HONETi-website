@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Montserrat:wght@500;600;700&display=swap');
+@import url('sections.css');
+
+:root {
+    --white: #ffffff;
+    --text-light: #4C4C4C;
+    --text-dark: #1A1A1A;
+    
+    --main-accent: #EE8C19;
+    --main-accent-light:#F5B035;
+    --main-accent-dark: #E15702;
+    --special-accent: #2FA600;
+
+    --main-grd-light: #F3A300;
+    --main-grd-dark:#F07A13;
+    
+    --bgr-grd-light: #CF469F;
+    --bgr-grd-dark: #2E22AB;
+    
+    --form-grd-light: #531594;
+    --form-grd-dark: #2E158B;
+}
+
+* {
+    /* font-family: 'Love Ya Like A Sister';
+    font-family: 'Montserrat', sans-serif; */
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2,h3,h4,h5{
+    font-weight: 700;
+}
+
+h2{
+    font-size: 50px;
+    line-height: 61px;
+}
+
+h3{
+    font-size: 40px;
+    line-height: 49px;
+}
+
+h4{
+    font-size: 26px;
+    line-height: 30px;
+}
+
+h5{
+    font-size: 20px;
+    line-height: 24px;
+}

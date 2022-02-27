@@ -1,0 +1,20 @@
+#start_section{
+    background: linear-gradient(107.81deg, var(--bgr-grd-dark) 9.97%, var(--bgr-grd-light) 90.03%);
+}
+.start_section-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75vw;
+    margin: 0 auto;
+}
+.start_section-inner--content{
+    color: #fff;
+}
+.start_section-inner--content h2{
+    margin-bottom: 15px;
+}
+.start_section-inner--content p{
+    margin-bottom: 20px;
+}
