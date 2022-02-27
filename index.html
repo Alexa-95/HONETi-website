@@ -8,6 +8,8 @@
     <title>Zadanie rekrutacyjne w firmie HONETi</title>
     <link rel="stylesheet" type="text/css" href="style/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 </head>
 <body>
     <div class="main_content">
@@ -16,13 +18,18 @@
                 <div class="logo">
                     <img src="images/logo.png" alt="Logo" width="250" height="102">
                 </div>
+                <div id="btn_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <div class="nav">
-                    <a href="http://">Start</a>
-                    <a href="http://">Jak to działa?</a>
-                    <a href="http://">Cennik</a>
+                    <a href="#start_section">Start</a>
+                    <a href="#middle_section">Jak to działa?</a>
+                    <a href="#pricing_section">Cennik</a>
                     <span class="line"></span>
-                    <a href="http://">Logowanie</a>
-                    <a href="http://">Rejestracja</a>
+                    <a href="#logowanie">Logowanie</a>
+                    <a href="#rejestracja">Rejestracja</a>
                 </div>
             </div>
         </div>
@@ -32,8 +39,8 @@
                     <h2>Poznaj Lorem Ipsum!</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
                     <div class="buttons">
-                        <a href="http://" class="btn_primary">O aplikacji</a>
-                        <a href="http://" class="btn_normal">Pobierz</a>
+                        <a href="#middle_section" class="btn_primary">O aplikacji</a>
+                        <a href="#middle_section" class="btn_normal">Pobierz</a>
                     </div>
                 </div>
                 <div class="start_section-inner--img">
@@ -41,18 +48,52 @@
                 </div>
             </div>
             <div class="scroll_btn">
-                <a href="http://" class="scroll"><i class="fa fa-angle-double-down"></i></a>
+                <a href="#middle_section" class="scroll"><i class="fa fa-angle-double-down"></i></a>
             </div>
             <div class="white_border"></div>
         </div>
         <div id="middle_section">
             <div class="middle_section-inner">
-                <h2>Jak to działa?</h2>
+                <h2 class="title">Jak to działa?</h2>
+                <div class="all_stages">
+                    <div class="phone_stage stage1">
+                        <img class="phone-img" src="./images/phone_big 2.png" alt="phone_big 2">
+                        <div class="stage_text">
+                            <span class="stage_text-title"><span class="number">1</span>Lorem ipsum dolor sit amet</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                    </div>
+                    <div class="phone_stage stage2">
+                        <div class="stage_text">
+                            <img class="arrow" src="./images/arrow1 1.png" alt="arrow1">
+                            <span class="stage_text-title"><span class="number">2</span>Lorem ipsum dolor sit amet</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <img class="phone-img" src="./images/phone_big 1.png" alt="phone_big 1">
+                    </div>
+                    <div class="phone_stage stage3">
+                        <img class="phone-img" src="./images/phone_big 3.png" alt="phone_big 3">
+                        <div class="stage_text">
+                            <img class="arrow" src="./images/arrow1 2.png" alt="arrow2">
+                            <span class="stage_text-title"><span class="number">3</span>Lorem ipsum dolor sit amet</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                    </div>
+                    <div class="phone_stage stage4">
+                        <img class="phone-img" src="./images/phone_big 4.png" alt="phone_big 4">
+                        <div class="stage_text">
+                            <img class="arrow" src="./images/arrow2 1.png" alt="arrow3">
+                            <span class="stage_text-title"><span class="number">4</span>Lorem ipsum dolor sit amet</span>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="title special">Lorem ipsum!</h2>
             </div>
         </div>
-        <div id="final_section">
-            <div class="final_section-inner">
-                <div class="final_section-inner--header">
+        <div id="pricing_section">
+            <div class="pricing_section-inner">
+                <div class="pricing_section-inner--header">
                     <h2>Cennik</h2>
                     <span>Ile to kosztuje?</span>
                 </div>
@@ -69,12 +110,20 @@
                                     <th></th>
                                     <th>
                                         <div class="version">Basic</div>
-                                        <h4>wersja darmowa</h4>
+                                        <h4>
+                                            <span class="span-break">
+                                                wersja 
+                                            </span>
+                                            <span class="span-break">
+                                                darmowa
+                                            </span>
+                                        </h4>
                                     </th>
                                     <th>
-                                        <div class="Premium">Basic</div>
+                                        <div class="version">Premium</div>
                                         <h4>79,99z <span class="price-accent">30% taniej</span></h4>
                                     </th>
+                                    <th class="break"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -82,41 +131,49 @@
                                     <td>Lorem ipsum</td>
                                     <td><i class="fa fa-check"></i></td>
                                     <td><i class="fa fa-check"></i></td>
+                                    <td class="break"></td>
                                 </tr>
                                 <tr>
                                     <td>dolor sit amet, consectetur </td>
                                     <td><i class="fa fa-check"></i></td>
                                     <td><i class="fa fa-check"></i></td>
+                                    <td class="break"></td>
                                 </tr>
                                 <tr>
                                     <td>adipiscing elit, sed do eiusmod</td>
                                     <td><i class="fa fa-check"></i></td>
                                     <td><i class="fa fa-check"></i></td>
+                                    <td class="break"></td>
                                 </tr>
                                 <tr>
                                     <td>tempor incididunt</td>
                                     <td><i class="fa fa-check"></i></td>
                                     <td><i class="fa fa-check"></i></td>
+                                    <td class="break"></td>
                                 </tr>
                                 <tr>
                                     <td>ut labore et dolore</td>
                                     <td><i class="fa fa-times"></i></td>
                                     <td><i class="fa fa-check"></i></td>
+                                    <td class="break"></td>
                                 </tr>
                                 <tr>
                                     <td>Lorem ipsum</td>
                                     <td><i class="fa fa-times"></i></td>
                                     <td><i class="fa fa-check"></i></td>
+                                    <td class="break"></td>
                                 </tr>
                                 <tr>
                                     <td>Ipsum dolor sit amet ut labore et </td>
                                     <td><i class="fa fa-times"></i></td>
                                     <td><i class="fa fa-check"></i></td>
+                                    <td class="break"></td>
                                 </tr>
                                 <tr>
                                     <td>dolore magna aliqua</td>
                                     <td><i class="fa fa-times"></i></td>
                                     <td><i class="fa fa-check"></i></td>
+                                    <td class="break"></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -124,13 +181,44 @@
                     <div class="login">
                         <h5>Zarejestruj się i wypróbuj!</h5>
                         <div class="login-buttons">
-                            <a href="http://">Rejestracja</a>
-                            <a href="http://">Logowanie</a>
+                            <a class="registration" href="#rejestracja">Rejestracja</a>
+                            <a class="login" href="#logowanie">Logowanie</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div id="logowanie">
+        <div class="login-inner">
+            <button class="close-popup"><i class="fa fa-times"></i></button>
+            <h4>Logowanie</h4>
+            <form action="login" name="login" id="login" method="get" class="login-form">
+                <label for="email-login">E-mail</label>
+                <input class="mail" type="email" name="email_login" placeholder="adres e-mail" required >
+                <label for="password-login">Hasło</label>
+                <input class="pass" type="password" name="password_login" placeholder="hasło" required>
+                <input class="submit" type="submit" id="login-submit" value="Logowanie">                
+           </form>
+        </div>
+    </div>
+    <div id="rejestracja">
+        <div class="register-inner">
+            <button class="close-popup"><i class="fa fa-times"></i></button>
+            <h4>Rejestracja</h4>
+            <form action="register" name="registration" id="registration" method="get" class="register-form">
+                <label for="firstname">Imię</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Imię">            
+                <label for="lastname">Nazwisko</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Nazwisko">
+                <label for="email-register">E-mail</label>
+                <input class="mail" type="email" name="email-register" placeholder="adres e-mail" required >
+                <label for="password-register">Hasło</label>
+                <input class="pass" type="password" name="password-register" placeholder="hasło" required>
+                <input class="submit" type="submit" id="registration-submit" value="Rejestracja">
+            </form>
+        </div>
+    </div>
+    <script type="module" src="./script/main.js"></script>
 </body>
 </html>

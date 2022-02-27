@@ -1,0 +1,82 @@
+#logowanie,
+#rejestracja{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000080;
+    z-index: 9;
+}
+.login-inner,
+.register-inner{
+    width: 420px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin: auto;
+    transform: translateY(50%);
+    box-shadow: 1px 1px 5px 1px #3c3c3c;
+}
+.close-popup{
+    float: right;
+    outline: unset;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    background: var(--white);
+    font-size: 18px;
+    line-height: 18px;
+    border-radius: 5px;
+    color: var(--main-grd-light);
+    border: 2px solid var(--main-grd-light);
+}
+.login-form,
+.register-form{
+    margin-top: 25px;
+}
+form.login-form label,
+form.login-form input,
+form.register-form label,
+form.register-form input{
+    display: block;
+}
+form.login-form label,
+form.register-form label{
+    font-weight: 600;
+}
+form.login-form .error,
+form.register-form .error{
+    color: red;
+    font-size: 14px;
+    line-height: 18px;
+}
+input:not([type='submit']){
+    border: 1px solid var(--main-grd-light);
+    padding: 5px 8px;
+    font-size: 14px;
+    margin: 4px 0 10px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: unset;
+}
+input:not([type='submit']).error{
+    border: 1px solid red;
+}
+input:not([type='submit']):focus-visible{
+    border: 1px solid var(--main-grd-dark);
+}
+input[type='submit']{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0 0 auto;
+    padding: 8px 20px;
+    border-radius: 5px;
+    border: unset;
+    font-weight: 600;
+    color: var(--white);    
+    background: linear-gradient(180deg, var(--main-grd-light) 0%, var(--main-grd-dark) 100%);
+    cursor: pointer;
+}
